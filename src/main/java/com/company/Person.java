@@ -9,6 +9,15 @@ public class Person {
         this.lastName = lastName;
     }
 
+    public Person () {
+        firstName = "";
+        lastName = "";
+    }
+
+    public boolean hasFullName () {
+        return !"".equals(firstName) && !"".equals(lastName);
+    }
+
     public String fullName() {
         return firstName + " " + lastName;
     }
