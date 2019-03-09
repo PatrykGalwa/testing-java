@@ -34,14 +34,12 @@ public class CourseTest {
     @Test
     public void shouldHaveStartDateNotBefore() {
 
-        Course course = new Course(ANY_COURSE_NAME, LocalDate.of(2017, 2, 4));
+        Course course = new Course(ANY_COURSE_NAME, LocalDate.of(2019, 3, 3));
         LocalDate present = LocalDate.of(2019, 3,2);
 
         boolean result = course.wasStartedBefore(present);
 
         assertFalse(result);
-
-
     }
 
 }
