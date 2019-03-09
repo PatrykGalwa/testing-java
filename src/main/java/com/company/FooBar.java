@@ -1,4 +1,4 @@
-package com.company.foobar;
+package com.company;
 
 public class FooBar {
     private final int integer;

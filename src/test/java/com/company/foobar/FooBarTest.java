@@ -1,5 +1,6 @@
 package com.company.foobar;
 
+import com.company.FooBar;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -40,8 +41,8 @@ public class FooBarTest {
 
     @Test
     public void shouldReturnFooWhenNumberIsDivisibleByFive() {
-        int divisibleByThree = 25;
-        FooBar fooBar = new FooBar(divisibleByThree);
+        int divisibleByFive = 25;
+        FooBar fooBar = new FooBar(divisibleByFive);
 
         String result = fooBar.asString();
 
